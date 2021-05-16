@@ -9,7 +9,7 @@ numbers = [3, 30, 34, 5, 9]
 def solution(numbers):
     numbers = list(map(str, numbers))
     numbers.sort(
-        key=lambda: x * 3, reverse=True
+        key=lambda x: x * 3, reverse=True
     )  # lamda:x*3 => 인수의 값이 1000이하 이므로 3번 반복
 
     return str(int("".join(numbers)))  # 모든 값이 0일때 ('000'처리를 위해) int로 변환한 뒤, 다시 str
